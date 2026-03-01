@@ -1,12 +1,14 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 const LANGUAGES = [
-  { code: "en-IN",     label: "English",  sublabel: "English (India)",         flag: "🇬🇧" },
-  { code: "hi-IN",     label: "हिन्दी",    sublabel: "Hindi (Devanagari)",       flag: "🇮🇳" },
-  // { code: "hinglish",  label: "Hinglish", sublabel: "Hindi + English mixed",    flag: "🤝" },
-  // { code: "auto",      label: "Auto",     sublabel: "Detect automatically",     flag: "✨" },
-  { code: "ta-IN",      label: "Tamil",     sublabel: "Detect automatically",     flag: "ௐ" },
-  { code: "mr-IN",      label: "Marathi",     sublabel: "Detect automatically",     flag: "♛" },
+  { code: "en-IN",     label: "English",  sublabel: "English (India)",            flag: "🇬🇧" },
+  { code: "hi-IN",     label: "हिन्दी",    sublabel: "Hindi (Devanagari)",           flag: "🇮🇳" },
+  { code: "ta-IN",      label: "Tamil",     sublabel: "Tamil India",              flag: "தமிழ்" },
+  { code: "mr-IN",      label: "Marathi",     sublabel: "Marathi India",          flag: "मराठी" },
+  { code: "kn-IN",      label: "Kannada",     sublabel: "Kannada India",          flag: "ಕನ್ನಡ" },
+  { code: "te-IN",      label: "Telugu",     sublabel: "Telugu India",           flag: "తెలుగు" },
+  { code: "ja-JP",      label: "Japanese",     sublabel: "Japanese (Japan) TESTING*",           flag: "🇯🇵" },
+  // { code: "auto",      label: "Auto",     sublabel: "Detect automatically",     flag: "✨" },  
 ];
 
 // Hinglish uses hi-IN engine — Chrome's hi-IN model is trained on real Indian
