@@ -1,0 +1,31 @@
+
+> speech-to-text-git@0.1.0 predeploy
+> npm run build
+
+
+> speech-to-text-git@0.1.0 build
+> react-scripts build
+
+Creating an optimized production build...
+Compiled successfully.
+
+File sizes after gzip:
+
+  63.99 kB  build/static/js/main.46503ad4.js
+  1.77 kB   build/static/js/453.801d38e0.chunk.js
+  264 B     build/static/css/main.e6c13ad2.css
+
+The project was built assuming it is hosted at /speech-to-text/.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+
+> speech-to-text-git@0.1.0 deploy
+> gh-pages -d build
+
+Published
